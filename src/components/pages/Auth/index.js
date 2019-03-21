@@ -40,7 +40,7 @@ class Auth extends React.Component{
 			<div id='Auth'>
 				<ContainerRow>
 					<ColCard lgCol='4' mdCol='4' smCol='12' xsCol='12' colClass='mx-auto' brCard='mb-3' tlCard=''>
-						<CardTitle className='Auth-Title'> Class </CardTitle>
+						<CardTitle className='Auth-Title'> Class - <span style={{fontStyle: 'italic'}}> Id  </span> </CardTitle>
 						<CardText> {config.titleView} </CardText>
 						{config.authView}
 					</ColCard>

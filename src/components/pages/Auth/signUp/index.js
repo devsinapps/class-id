@@ -54,6 +54,8 @@ class SignUp extends React.Component{
 			}
 			if(password !== keypass){
 				return alert('Fail')
+			}else if(password.length < 6 ){
+				return alert('Password to short')
 			}else{
 				this.props.signUp(dataUser)
 			}

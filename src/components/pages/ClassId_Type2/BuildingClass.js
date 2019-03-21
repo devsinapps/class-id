@@ -139,24 +139,19 @@ class BuildingClass extends React.Component{
 				<div id='BuildingClassType2'>
 					<ContainerRow>
 						<B_Col lgCol='11' mdCol='11' smCol='11' xsCol='11' colClass='mx-auto' brCard='mb-3'>
+							<div className='Pages-Title'>
+								<CardTitle> Daftar Kelas </CardTitle>
+							</div>
 							<Card className='main-frame'>
 								<CardBody>
-									<div className='text-center'>
-										<CardTitle> Daftar Ruangan </CardTitle>
-									</div>
 									<ContainerRow>
 										{classList && classList.map((data)=>{
-											const statusBackground = data.status === true ? '#ff3838' : '#2ed573';
-											const style = {
-												styleStatus: {
-													borderRight: `2px solid ${statusBackground}` 
-												}
-											}
+											const statusColor = data.status === true ? '#d63031' : '#ffffff';
 											if(data.idRoom == idBuilding){
 												return(
-													<ColCard lgCol='2' mdCol='2' smCol='6' xsCol='12' colClass='' brCard='mb-3' tlCard='' style={style.styleStatus} cardAction={() => this.toggleModal(data)} key={data.id}>
+													<ColCard lgCol='2' mdCol='2' smCol='6' xsCol='12' colClass='' brCard='mb-3' tlCard='' cardAction={() => this.toggleModal(data)} key={data.id}>
 														<div className='classDetail'> 
-															<FontAwesomeIcon icon='home' className='classIcon'/>
+															<FontAwesomeIcon icon='home' className='classIcon' style={{color: statusColor}}/>
 															<CardText> {data.room} </CardText>
 														</div>
 													</ColCard>

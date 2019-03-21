@@ -48,6 +48,7 @@ html body {
       height: 100vh;
       transition: all .3s;
       background-color: #f5f6fa;
+      overflow-y: scrool;
       box-shadow: -1px 0px rgba(0, 0, 0, 0.2); }
       html body #root #Routes .SidenavProfile .SidenavProfile-Menu .SidenavProfile-Img {
         margin-top: 40px;
@@ -161,6 +162,10 @@ html body {
           html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 ul li {
             font-size: 15px;
             color: #222f3e; }
+    html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .Pages-Title {
+      text-align: center; }
+      html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .Pages-Title .card-title {
+        font-size: 30px; }
     html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .main-frame {
       background-color: #ffffff;
       box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
@@ -170,20 +175,43 @@ html body {
         border-radius: 0;
         cursor: pointer;
         transition: all .2s;
-        background-color: #f1f2f6; }
+        background-color: #0073e6; }
         html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-2 .card:hover {
           box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4); }
         html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-2 .card .card-body {
           position: relative; }
           html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-2 .card .card-body .classDetail .classIcon {
-            color: #ffffff;
             font-size: 30px;
             float: left; }
           html body #root #Routes .Component #BuildingClassType2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-2 .card .card-body .classDetail .card-text {
             float: right;
-            font-size: 20px; }
+            font-size: 20px;
+            color: #ffffff; }
 
 @media screen and (max-width: 600px) {
+  html body #root #Routes .Component .Pages-Loading {
+    margin-top: 40%; }
+  html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff; }
+    html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-4 {
+      line-height: 100px; }
+      html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-4 .building {
+        color: #ffffff;
+        font-size: 40px; }
+    html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 .card-text {
+      color: #ffffff;
+      padding-top: 20px;
+      font-size: 15px;
+      text-align: center; }
+    html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 ul li {
+      display: none; } }
+
+@media screen and (min-width: 601px) and (max-width: 760px) {
+  html body #root #Routes .Component .Pages-Loading {
+    margin-top: 40%; }
   html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card {
     height: 100px;
     border: none;
@@ -200,3 +228,18 @@ html body {
       text-align: center; }
     html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 ul li {
       display: none; } }
+
+@media screen and (min-width: 764px) and (max-width: 1212px) {
+  html body #root #Routes .Component .Pages-Loading {
+    margin-top: 40%; }
+  html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-4 {
+    line-height: 100px; }
+    html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-4 .building {
+      color: #1e90ff;
+      font-size: 40px; }
+  html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 .card-text {
+    color: #2d3436;
+    font-size: 12px;
+    text-align: center; }
+  html body #root #Routes .Component #ClassId_Type2 .container-fluid .row .col-lg-11 .main-frame .card-body .container-fluid .col-lg-3 a .card .container-fluid .row .col-lg-8 ul li {
+    display: none; } }

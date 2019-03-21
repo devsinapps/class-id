@@ -12,6 +12,7 @@ class UserKey extends React.Component{
 					<Label htmlFor='password'> Password </Label>
 					<Input
 						id='password'
+						type='password'
 						value={value.password}
 						onChange={this.props.onChange}
 					/>
@@ -20,6 +21,7 @@ class UserKey extends React.Component{
 					<Label htmlFor='keypass'> Confirm Password </Label>
 					<Input
 						id='keypass'
+						type='password'
 						value={value.keypass}
 						onChange={this.props.onChange}
 					/>
