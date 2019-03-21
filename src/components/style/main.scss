@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html{
+	body{
+		margin: 0;
+		position: relative;
+		background-color: #ffffff;
+		font-family: 'Poppins', sans-serif;
+		#root{
+			#Routes{
+				.Navigations{
+					position: fixed;
+					left: 0;
+					right: 0;
+					z-index: 2;
+					height: 60px;
+					background-color: #1e90ff;
+					box-shadow: 0px 0px 2px 1px rgba(0,0,0,.4);
+					.menu{
+						margin: auto;
+						a{
+							color: #ecf0f1;
+							outline: none;
+							padding: 20px;
+							text-decoration: none;
+							transition: all .3s;
+							cursor: pointer;
+							font-size: 15px;
+							&:hover{
+								background-color: #0073e6;
+							}
+						}
+					}
+					.initials{
+						position: absolute;
+						cursor: pointer;
+						right: 10px;
+						height: 40px;
+						width: 40px;
+						border-radius: 50%;
+						background-color: #0073e6;
+						.card-text{
+							color: #ecf0f1;
+							line-height: 40px;
+							text-align: center;
+							font-size: 19px;
+						}
+					}
+				}
+				.SidenavProfile{
+					position: relative;
+					.SidenavProfile-Menu{
+						position: fixed;
+						z-index: 2;
+						top: 60px;
+						right: -200px;
+						width: 200px;
+						height: 100vh;
+						transition: all .3s;
+						background-color: #f5f6fa;
+						box-shadow: -1px 0px rgba(0,0,0,.2);
+						.SidenavProfile-Img{
+							margin-top: 40px;
+							text-align: center;
+							img{	
+
+								height: 100px;
+								width: 100px;
+								border-radius: 50%;
+							}
+						}
+						ul{
+							margin: 40px 0 0 0;
+							list-style-type: none;
+							padding: 0;
+							li{
+								height: 40px;
+								span{
+									line-height: 40px;
+									padding-left: 20px;
+								}
+							}
+						}
+						.SidenavProfile-Auth{
+							text-align: center;
+							a{
+								cursor: pointer;
+								padding: 7px;
+								border: 1px solid #1e90ff;
+								border-radius: 5px;
+								color: #1e90ff;
+								outline: none;
+								transition: all .2s;
+								&:hover{
+									text-decoration: none;
+								}
+								&:active{
+									background-color: #1e90ff;
+									color: #ffffff;
+								}
+							}
+						}
+					}
+					.SidenavProfile-Menu-Slider{
+						right: 0;
+					}
+					.SidenavProfile-Toggle{
+						position: fixed;
+						cursor: pointer;
+						transition: all .2s;
+					}
+					.SidenavProfile-Toggle-Active{
+						position: fixed;
+						z-index: 1;
+						height: 100vh;
+						width: 100%;
+						background-color: rgba(0,0,0,.4);
+					}
+				}
+				.Component{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 80px;
+					padding-bottom: 80px;
+					.Pages-Loading{
+						margin-top: 10%;
+						text-align: center;
+						img{
+							height: 60px;
+							width: 60px;
+						}
+					}
+					#Auth{
+						.container-fluid:nth-child(1){
+							.row{
+								.col-lg-4{
+									.card{
+										.card-header{
+
+										}
+										.card-body{
+											.card-title{
+												font-size: 30px;
+												text-align: center;
+												color: #1e90ff;
+											}
+											.card-text{
+												font-size: 16px;
+												text-align: center;
+											}
+											form{
+												.form-group{
+													label{
+														input{
+
+														}
+														select{
+															option{
+
+															}
+														}
+													}
+													button{
+														box-shadow: none;
+														transition: all .2s;
+														background-color: #1e90ff;
+														&:active{
+															background-color: #0073e6;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						.container-fluid:nth-child(2){
+							.col-lg-4{
+								p{
+									font-size: 14px;
+									text-align: center;
+									.SignUp{
+										color: #1e90ff;
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+					#ClassId_Type2{
+						.container-fluid{
+							.row{
+								.col-lg-11{
+									.Pages-Title{
+										text-align: center;
+										.card-title{
+											font-size: 30px;
+										}
+									}
+									.main-frame{
+										background-color: #ffffff;
+										box-shadow: 0px 0px 2px 1px rgba(0,0,0,.5);
+										height: 400px;
+										overflow: hidden;
+										overflow-y: auto;
+										border-radius: 0;
+										.card-body{
+											.container-fluid{
+												.col-lg-3{
+													a{
+														outline: none;
+														&:hover{
+															text-decoration: none;
+														}
+														.card{
+															margin-top: 10px;
+															padding: 0;
+															height: 150px;
+															transition: all .3s;
+															border: none;
+															border-radius: 0;
+															border-bottom: 2px solid #1e90ff;
+															&:hover{
+																background-color: #ffffff; 
+																border: 1px solid rgba(30, 144, 255,.2)
+															}
+															.container-fluid{
+																.row{
+																	.col-lg-4{
+																		line-height: 150px;
+																		.building{
+																			color:#3498db;
+																			font-size: 80px;
+																		}
+																	}
+																	.col-lg-8{
+																		.card-text{
+																			color: #222f3e;
+																			font-size: 20px;
+																			text-align: center;
+																		}
+																		ul{
+																			li{
+																				font-size: 15px;
+																				color: #222f3e;
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}	
+									}
+								}
+							}
+						}
+					}
+					#BuildingClassType2{
+						.container-fluid{
+							.row{
+								.col-lg-11{
+									.main-frame{
+										background-color: #ffffff;
+										box-shadow: 0px 0px 2px 1px rgba(0,0,0,.5);
+										height: 400px;
+										border-radius: 0;
+										.card-body{
+											.container-fluid{
+												.col-lg-2{
+													.card{
+														border-radius: 0;
+														cursor: pointer;
+														transition: all .2s;
+														background-color: #f1f2f6;
+														&:hover{
+															box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.4);
+														}
+														.card-body{
+															position: relative;
+															.classDetail{
+																.classIcon{
+																	color: #ffffff;
+																	font-size: 30px;
+																	float: left;
+																}
+																.card-text{
+																	float: right;
+																	font-size: 20px;
+																}
+															}
+														}	
+													}
+												}
+											}
+										}	
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	html{
+		body{
+			#root{
+				#Routes{
+					.Navigations{
+						.menu{
+							a{
+								&:hover{
+								}
+							}
+						}
+						.initials{
+							.card-text{
+							}
+						}
+					}
+					.SidenavProfile{
+						.SidenavProfile-Menu{
+							.SidenavProfile-Img{
+								img{	
+								}
+							}
+							ul{
+								li{
+									span{
+									}
+								}
+							}
+							.SidenavProfile-Auth{
+								a{
+									&:hover{
+									}
+									&:active{
+									}
+								}
+							}
+						}
+						.SidenavProfile-Menu-Slider{
+						}
+						.SidenavProfile-Toggle{
+						}
+						.SidenavProfile-Toggle-Active{
+						}
+					}
+					.Component{
+						.Pages-Loading{
+							img{
+							}
+						}
+						#ClassId_Type2{
+							.container-fluid{
+								.row{
+									.col-lg-11{
+										.main-frame{
+											.card-body{
+												.container-fluid{
+													.col-lg-3{
+														a{
+															&:hover{
+															}
+															.card{
+																height: 100px;
+																border: none;
+																border-radius: 5px;
+																background-color: #1e90ff;
+																.container-fluid{
+																	.row{
+																		.col-lg-4{
+																			line-height: 100px;
+																			.building{
+																				color: #ffffff;
+																				font-size: 40px;
+																			}
+																		}
+																		.col-lg-8{
+																			.card-text{
+																				color: #ffffff;
+																				font-size: 15px;
+																				text-align: center;
+																			}
+																			ul{
+																				li{
+																					display: none;
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}	
+										}
+									}
+								}
+							}
+						}
+						#BuildingClassType2{
+							.container-fluid{
+								.row{
+									.col-lg-11{
+										.main-frame{
+											.card-body{
+												.container-fluid{
+													.col-lg-2{
+														.card{
+															&:hover{
+															}
+															.card-body{
+																.classDetail{
+																	.classIcon{
+																	}
+																	.card-text{
+																	}
+																}
+															}	
+														}
+													}
+												}
+											}	
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
